@@ -12,8 +12,7 @@ import { interval } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'CurrentTime';
-  today = new Date();
-  currentTime = signal(this.today);
+  currentTime = signal(new Date());
   constructor() {}
   ngOnInit(): void {
     this.start();
