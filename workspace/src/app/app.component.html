@@ -1,7 +1,7 @@
 <div id="container">
   <div id="content">
     <div id="day">
-      <span>{{ currentTime() | date : "yyyy/MM/dd" }}</span>
+      <span>{{ currentTime() | date : "yyyy/MM/dd" }}({{ weekOfDay() }})</span>
     </div>
     <div>
       <span id="time">{{ currentTime() | date : "HH:mm:ss" }}</span>
